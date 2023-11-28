@@ -3,6 +3,8 @@
 This Git Repository contains code for JavaScript Basics. <br/> 
 This Repository also contain branches which contains javascipt code. <br/> 
 
+<b> JavaScriptday1 branch </b> <br/> 
+
 In day1.html file we used <br/> 
 
 <script></script> tags. <br/> 
