@@ -1,5 +1,7 @@
 # javascript-basics
 
+<b> JavaScriptday2 Branch </b> <br/>
+
 In day2.html file we used <br/>
 
 <script src="./js/msg.js"></script> tag <br/>
