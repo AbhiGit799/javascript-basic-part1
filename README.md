@@ -7,7 +7,7 @@ In day1.html file we used <br/>
 
 <script></script> tags. <br/> 
 
-<noscript></noscript> tags. <br/> 
+noscript tags. <br/> 
 
 document.write() <br/> 
 
