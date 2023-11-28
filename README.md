@@ -23,6 +23,8 @@ document.getElementById("pId").style.backgroundColor = "yellow"; <br/>
 
 document.getElementsByTagName();<br/>
 
+document.getElementsByName(); <br/>
+
 document.getElementsByClassName();<br/>
 
 document.querySelector(); <br/>
