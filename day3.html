@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learning JavaScript 3</title>
+  </head>
+  <body>
+    <div style="text-align: center">
+      <h2
+        style="
+          background-color: blueviolet;
+          color: white;
+          text-transform: uppercase;
+        "
+      >
+        Learning JavaScript
+      </h2>
+</div>
+
+    <p id="pId">Hi Raman!!</p>
+
+    <p id="pId">Hi Pawan!!</p>
+
+    <p>Hi Ramesh!!</p>
+
+    <p>Hi Ajeet!!</p>
+
+    <br /><br />
+
+    <ul>
+      <li>AA</li>
+      <li>BB</li>
+      <li>CC</li>
+    </ul>
+
+    <br /><br />
+
+    <div class="hcl">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quam
+      molestiae illum iure similique dolore nesciunt libero sed nulla, sequi
+      blanditiis, perferendis cupiditate praesentium voluptates quibusdam dicta
+      laboriosam quidem facere?
+    </div>
+
+    <br /><br />
+
+    <div class="hcl">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quam
+      molestiae illum iure similique dolore nesciunt libero sed nulla, sequi
+      blanditiis, perferendis cupiditate praesentium voluptates quibusdam dicta
+      laboriosam quidem facere?
+    </div>
+
+    <br /><br />
+
+    FirstName : <input type="text" name="txtFirstName" value="Arjun" /><br />
+    LastName: <input type="text" name="txtLastName" value="Sharma" />
+
+    <br /><br />
+
+    Male : <input type="radio" name="rd" /> Female :
+    <input type="radio" name="rd" />
+
+    <br /><br />
+
+    <p id="xpid">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, laboriosam
+      magnam, inventore dolorem eum, doloremque possimus libero dignissimos a
+      dicta facilis? Molestias dolores molestiae perspiciatis harum consectetur
+      magnam officiis maiores?
+    </p>
+
+    <p id="ypid">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque esse animi
+      excepturi perspiciatis, quaerat optio! Maiores mollitia eos laborum nulla
+      doloribus, minima porro fugiat dolore quam corrupti saepe itaque pariatur!
+    </p>
+
+    <br /><br />
+
+    <p>
+        This day reminds us of the sacrifices and courage all men and women took to free our country from the Britishers. This day we pay tribute to those freedom fighters who laid down their lives for the sake of the motherland. We pay respect to those who made it a free nation for generations to come.
+    </p>
+  
+    <p>
+        Air pollution is the contamination of air by toxic or polluting particles and gases. 
+        The causes of climate change are often the same as the causes of air pollution: transport, the power sector, industrial emissions and crop burning.
+    </p>
+
+    <br /><br />
+
+    <p class="tcs">
+        Hello Jimmy!!
+    </p>
+
+    <br /><br />
+
+    <h3 class="acct">Accenture</h3>
+    <h3 class="wip">Wipro</h3>
+    <h3 id="inf">Infosys</h3>
+
+    <br /><br />
+
+   
+    <span>KLADFEWWERW</span>
+    <h4>AAADFEWWERWR</h4>
+
+    <script>
+      var x = document.getElementById("pId");
+      console.log(document.getElementById("pId"));
+
+      //Setting content
+      document.getElementById("pId").innerHTML = "Hello India";
+      document.getElementById("pId").style.color = "red";
+
+      //Camel case for css properties
+      document.getElementById("pId").style.fontSize = "40px";
+      document.getElementById("pId").style.backgroundColor = "yellow";
+
+      //Above code is not correct because we are trying to access p element again and again
+
+      var x = document.getElementById("pId"); //catches first matching element.
+      x.innerHTML = "Hello Raja!!";
+      x.style.color = "green";
+      x.style.fontSize = "35px";
+
+      //By Tag name, it gives output in form of array
+
+      var y = document.getElementsByTagName("p");
+      console.log(y);
+      y[1].innerHTML = "Hello Divya!!";
+      y[1].style.color = "red";
+      y[1].style.fontSize = "35px";
+
+      var z = document.getElementsByTagName("p")[2];
+      console.log(z);
+      z.innerHTML = "Hello Kavita!!";
+      z.style.color = "green";
+      z.style.fontSize = "35px";
+
+      var a = document.getElementsByTagName("p");
+
+      for (i = 0; i < a.length; i++) {
+        a[i].innerHTML = "Hello Rashmi!!";
+        a[i].style.color = "purple";
+        a[i].style.fontSize = "35px";
+      }
+
+      //ul and li
+      var b = document.getElementsByTagName("ul")[0];
+      var c = b.getElementsByTagName("li");
+
+      for (i = 0; i < c.length; i++) {
+        c[i].innerHTML = "Hello Radha!!";
+        c[i].style.color = "red";
+        c[i].style.fontSize = "35px";
+      }
+
+      //getElementsByClassName
+
+      var d = document.getElementsByClassName("hcl");
+
+      for (i = 0; i < d.length; i++) {
+        d[i].innerHTML = "Hello John!!";
+        d[i].style.color = "green";
+        d[i].style.fontSize = "20px";
+      }
+
+      //getElementsByName
+
+      document.getElementsByName("txtFirstName")[0].style.color = "red";
+      document.getElementsByName("txtLastName")[0].style.color = "blue";
+
+      //Radio button
+      //getElementsByName
+      var e = document.getElementsByName("rd");
+      for (i = 0; i < e.length; i++) {
+        e[i].checked = true;
+      }
+
+      //querySelector() :- returns first matching character
+
+      var f = document.querySelector("#xpid");
+      f.innerHTML = "Hello USA!!";
+      f.style.fontSize = "32px";
+
+      var g = document.querySelector("#ypid");
+      g.innerHTML = "Hello America!!";
+      g.style.fontSize = "32px";
+
+      //querySelectorAll() for matching id
+
+      var h = document.querySelectorAll("#xpid");
+
+      for (i = 0; i < h.length; i++) {
+        h[i].innerHTML = "Hello IND!!";
+        h[i].style.color = "green";
+        h[i].style.fontSize = "20px";
+      }
+
+      var j = document.querySelectorAll("p");
+
+        for (i = 0; i < j.length; i++) {
+        j[i].innerHTML = "Hello Australia!!";
+        j[i].style.color = "purple";
+        j[i].style.fontSize = "20px";
+        }
+
+        var k = document.querySelector("p");
+
+        for (i = 0; i < k.length; i++) {
+        k[i].innerHTML = "Hello London!!";
+        k[i].style.color = "blue";
+        k[i].style.fontSize = "20px";
+        }
+
+        var l = document.querySelector(".tcs");
+        l.innerHTML = "Good Luck!!";
+        l.style.color="red";
+
+       
+        var m = document.querySelectorAll("ul li");
+
+        for (i = 0; i < m.length; i++) {
+        m[i].innerHTML = "Hello JBP!!";
+        m[i].style.color = "blue";
+        m[i].style.fontSize = "20px";
+        }
+
+
+        var n = document.querySelectorAll("h3.acct")[0];
+        n.innerHTML="Accenture LTD";
+
+
+        var o = document.querySelectorAll("h3.wip")[0];
+        o.innerHTML="Wipro LTD";
+        
+
+        var oo = document.querySelectorAll("h3#inf")[0];
+        oo.innerHTML="Infosys LTD";
+
+
+        var pp = document.querySelectorAll("span,h4");
+        for(i=0;i<pp.length;i++)
+        {
+            pp[i].innerHTML = "Changed";
+        }
+       
+    </script>
+  </body>
+</html>
