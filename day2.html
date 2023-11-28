@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>JavaScript Learning 2</title>
+
+    <script src="./js/msg.js"></script>
+
+    <script>
+      function msg1() {
+        console.log("Hello Arjun");
+        document.getElementById("pId").style.color = "red";
+      }
+
+      //msg1();
+
+      //Imp Note:-  Code Executes from top to bottom and left to right.
+
+      //Error:-
+      // Below line code will give error TypeError: Cannot read properties of null (reading 'style')
+      // Because we are running the script too early before the document has been loaded and thus the item can't be found.
+      //document.getElementById("p1").style.color="green";
+
+      console.log(document.getElementById("p1")); // This will give null, because element not get loaded yet.
+    </script>
+  </head>
+
+  <body>
+    <div style="text-align: center">
+      <h2
+        style="
+          background-color: blueviolet;
+          color: white;
+          text-transform: uppercase;
+        "
+      >
+        Learning JavaScript
+      </h2>
+
+      <b> <p style="font-size: larger" id="p1">Welcome!!</p> </b>
+
+      <script>
+        function msg2() {
+          console.log("Hello Amit");
+        }
+
+        msg2();
+      </script>
+
+      <script>
+        function msg3() {
+          console.log("Hello Aman");
+        }
+        msg3();
+      </script>
+
+      <h3>Hello TechWorld</h3>
+
+      <b> <p id="pId">Hi All,</p> </b>
+
+      <button type="button" onclick="msg1()">Change Color</button>
+
+      &nbsp; &nbsp;
+
+      <button type="button" onclick="myMsg()">Get Alert Message</button>
+
+      <script>
+        //Here it is correct.
+        document.getElementById("p1").style.color = "green";
+      </script>
+    </div>
+  </body>
+</html>

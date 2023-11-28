@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Learning 2</title>
+    <script>
+        function ShowAlert()
+        {
+            alert("Welcome Message");
+        }
+
+        function ShowConfirm()
+        {
+           // confirm("Are you sure want to delete?")
+        
+           var result =  confirm("Are you sure want to delete?")
+        
+           console.log(result);
+        }
+
+        function ShowPrompt()
+        {
+          var res = prompt("Enter Your Name");
+          console.log(res);
+        }
+       
+    </script>
+</head>
+<body>
+    <div style="text-align: center">
+      <h2
+        style="
+          background-color: blueviolet;
+          color: white;
+          text-transform: uppercase;
+        "
+      >
+        Learning JavaScript
+      </h2>
+       <h3>Demo Alerts</h3>
+       <button type="button" onclick="ShowAlert()">Show Alert</button> &nbsp;
+       <button type="button" onclick="ShowConfirm()">Show Confirm</button> &nbsp;
+       <button type="button" onclick="ShowPrompt()">Show Prompt</button>
+   
+    </div>
+</body>
+</html>
