@@ -15,6 +15,9 @@ document.write() <br/>
 
 document.writeln() <br/> 
 
+Commenting code in JavaScript  <br/>
+// /* */ <br/>
+
 Added extension Live Server in VSCode <br/> 
 
 <b> Note:- </b> In Modern javascript using let we cannot redeclare variable with same name. <br/>   
