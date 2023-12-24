@@ -9,6 +9,7 @@
     <script src="./js/msg.js"></script>
 
     <script>
+
       function msg1() {
         console.log("Hello Arjun");
         document.getElementById("pId").style.color = "red";
@@ -23,19 +24,17 @@
       // Because we are running the script too early before the document has been loaded and thus the item can't be found.
       //document.getElementById("p1").style.color="green";
 
-      console.log(document.getElementById("p1")); // This will give null, because element not get loaded yet.
+      console.log(document.getElementById("p1")); //Output=null // This will give null, because element not get loaded yet.
+
     </script>
+
+
   </head>
 
   <body>
     <div style="text-align: center">
-      <h2
-        style="
-          background-color: blueviolet;
-          color: white;
-          text-transform: uppercase;
-        "
-      >
+      
+      <h2 style="background-color: blueviolet;color: white;text-transform: uppercase;">
         Learning JavaScript
       </h2>
 
@@ -56,6 +55,8 @@
         msg3();
       </script>
 
+
+
       <h3>Hello TechWorld</h3>
 
       <b> <p id="pId">Hi All,</p> </b>
@@ -70,6 +71,11 @@
         //Here it is correct.
         document.getElementById("p1").style.color = "green";
       </script>
+
+
+
     </div>
+
+
   </body>
 </html>
