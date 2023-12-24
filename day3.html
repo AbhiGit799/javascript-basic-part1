@@ -1,32 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  
+ <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learning JavaScript 3</title>
   </head>
-  <body>
-    <div style="text-align: center">
-      <h2
-        style="
-          background-color: blueviolet;
-          color: white;
-          text-transform: uppercase;
-        "
-      >
-        Learning JavaScript
-      </h2>
+
+<body>
+      <div style="text-align: center">
+        <h2
+          style="
+            background-color: blueviolet;
+            color: white;
+            text-transform: uppercase;
+          "
+        >
+          Learning JavaScript 3
+        </h2>
 </div>
 
-    <p id="pId">Hi Raman!!</p>
+    <p id="apId">Hi Raman!!</p>
 
-    <p id="pId">Hi Pawan!!</p>
+    <p id="bpId">Hi Pawan!!</p>
 
-    <p>Hi Ramesh!!</p>
+    <p id="cpId">Hi Ramesh!!</p>
 
-    <p>Hi Ajeet!!</p>
+    <p id="dpId">Hi Ajeet!!</p>
+
+    <p id="epId">Hi Tech!!</p>
+
+    <p id="fpId">Hi JS!!</p>
+
+    <p id="gpId">Hi React!!</p>
+
+    <p>Hello Sita!!</p>
+
+    <p>Hello Amdocs!!</p>
+
 
     <br /><br />
+
+
 
     <ul>
       <li>AA</li>
@@ -36,6 +51,8 @@
 
     <br /><br />
 
+  
+  
     <div class="hcl">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quam
       molestiae illum iure similique dolore nesciunt libero sed nulla, sequi
@@ -53,6 +70,8 @@
     </div>
 
     <br /><br />
+
+   
 
     FirstName : <input type="text" name="txtFirstName" value="Arjun" /><br />
     LastName: <input type="text" name="txtLastName" value="Sharma" />
@@ -63,6 +82,8 @@
     <input type="radio" name="rd" />
 
     <br /><br />
+
+
 
     <p id="xpid">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, laboriosam
@@ -77,7 +98,15 @@
       doloribus, minima porro fugiat dolore quam corrupti saepe itaque pariatur!
     </p>
 
+    <p id="hpid">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque esse animi
+      excepturi perspiciatis, quaerat optio! Maiores mollitia eos laborum nulla
+      doloribus, minima porro fugiat dolore quam corrupti saepe itaque pariatur!
+    </p>
+
     <br /><br />
+
+
 
     <p>
         This day reminds us of the sacrifices and courage all men and women took to free our country from the Britishers. This day we pay tribute to those freedom fighters who laid down their lives for the sake of the motherland. We pay respect to those who made it a free nation for generations to come.
@@ -90,12 +119,16 @@
 
     <br /><br />
 
-    <p class="tcs">
+
+    
+      <p class="tcs">
         Hello Jimmy!!
     </p>
 
     <br /><br />
 
+
+ 
     <h3 class="acct">Accenture</h3>
     <h3 class="wip">Wipro</h3>
     <h3 id="inf">Infosys</h3>
@@ -103,59 +136,80 @@
     <br /><br />
 
    
+   
     <span>KLADFEWWERW</span>
     <h4>AAADFEWWERWR</h4>
 
     <script>
-      var x = document.getElementById("pId");
-      console.log(document.getElementById("pId"));
 
-      //Setting content
-      document.getElementById("pId").innerHTML = "Hello India";
-      document.getElementById("pId").style.color = "red";
+    console.log("The HTML DOM (Document Object Model");
+
+    var x = document.getElementById("apId");
+    console.log(document.getElementById("bpId"));
+    console.log(x);
+
+
+        //Setting content
+    document.getElementById("cpId").innerHTML = "Hello India";
+    document.getElementById("dpId").style.color = "red";
+
+
 
       //Camel case for css properties
-      document.getElementById("pId").style.fontSize = "40px";
-      document.getElementById("pId").style.backgroundColor = "yellow";
+       document.getElementById("epId").style.fontSize = "40px";
+       document.getElementById("fpId").style.backgroundColor = "yellow";
 
-      //Above code is not correct because we are trying to access p element again and again
 
-      var x = document.getElementById("pId"); //catches first matching element.
+
+   //Above code is not correct because we are trying to access p element again and again
+
+      var x = document.getElementById("gpId"); //catches first matching element.
       x.innerHTML = "Hello Raja!!";
       x.style.color = "green";
       x.style.fontSize = "35px";
 
-      //By Tag name, it gives output in form of array
+
+
+    //By Tag name, it gives output in form of array
+    // Note:- Elements is written
 
       var y = document.getElementsByTagName("p");
       console.log(y);
-      y[1].innerHTML = "Hello Divya!!";
-      y[1].style.color = "red";
-      y[1].style.fontSize = "35px";
+      y[0].innerHTML = "Hello Divya!!";
+      y[0].style.color = "red";
+      y[0].style.fontSize = "35px";
 
-      var z = document.getElementsByTagName("p")[2];
+
+
+      var z = document.getElementsByTagName("p")[7];
       console.log(z);
       z.innerHTML = "Hello Kavita!!";
       z.style.color = "green";
       z.style.fontSize = "35px";
 
-      var a = document.getElementsByTagName("p");
 
-      for (i = 0; i < a.length; i++) {
-        a[i].innerHTML = "Hello Rashmi!!";
-        a[i].style.color = "purple";
-        a[i].style.fontSize = "35px";
-      }
+
+      // var a = document.getElementsByTagName("p");
+
+      // for (i = 0; i < a.length; i++) {
+      //   a[i].innerHTML = "Hello Rashmi!!";
+      //   a[i].style.color = "purple";
+      //   a[i].style.fontSize = "35px";
+      // }
+
+
 
       //ul and li
       var b = document.getElementsByTagName("ul")[0];
       var c = b.getElementsByTagName("li");
 
       for (i = 0; i < c.length; i++) {
-        c[i].innerHTML = "Hello Radha!!";
+        c[i].innerHTML = "Hello Intel!!";
         c[i].style.color = "red";
         c[i].style.fontSize = "35px";
       }
+
+
 
       //getElementsByClassName
 
@@ -166,6 +220,7 @@
         d[i].style.color = "green";
         d[i].style.fontSize = "20px";
       }
+
 
       //getElementsByName
 
@@ -189,9 +244,10 @@
       g.innerHTML = "Hello America!!";
       g.style.fontSize = "32px";
 
+
       //querySelectorAll() for matching id
 
-      var h = document.querySelectorAll("#xpid");
+      var h = document.querySelectorAll("#hpid");
 
       for (i = 0; i < h.length; i++) {
         h[i].innerHTML = "Hello IND!!";
@@ -199,21 +255,19 @@
         h[i].style.fontSize = "20px";
       }
 
-      var j = document.querySelectorAll("p");
 
-        for (i = 0; i < j.length; i++) {
-        j[i].innerHTML = "Hello Australia!!";
-        j[i].style.color = "purple";
-        j[i].style.fontSize = "20px";
-        }
 
-        var k = document.querySelector("p");
 
-        for (i = 0; i < k.length; i++) {
-        k[i].innerHTML = "Hello London!!";
-        k[i].style.color = "blue";
-        k[i].style.fontSize = "20px";
-        }
+      // var j = document.querySelectorAll("p");
+
+      //   for (i = 0; i < j.length; i++) {
+      //   j[i].innerHTML = "Hello Australia!!";
+      //   j[i].style.color = "purple";
+      //   j[i].style.fontSize = "20px";
+      //   }
+
+
+
 
         var l = document.querySelector(".tcs");
         l.innerHTML = "Good Luck!!";
@@ -241,12 +295,15 @@
         oo.innerHTML="Infosys LTD";
 
 
-        var pp = document.querySelectorAll("span,h4");
+        var pp = document.querySelectorAll("span,h4");  //For multiple element use ,
         for(i=0;i<pp.length;i++)
         {
             pp[i].innerHTML = "Changed";
         }
        
     </script>
+
   </body>
 </html>
+
+
